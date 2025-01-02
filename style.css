@@ -1,0 +1,513 @@
+/* Variables modernes 2024 */
+:root {
+    /* Palette de couleurs moderne */
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --accent: #f43f5e;
+    --background: #f8fafc;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --text-light: #64748b;
+    
+    /* Nouvelles couleurs tendance 2024 */
+    --neo-purple: #8b5cf6;
+    --neo-teal: #14b8a6;
+    --neo-orange: #f97316;
+    
+    /* Gradients modernes */
+    --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--neo-purple) 0%, var(--accent) 100%);
+    --gradient-surface: linear-gradient(120deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.6) 100%);
+    
+    /* Ombres modernes */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.12);
+    
+    /* Espacements */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Border radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 2rem;
+    --radius-full: 9999px;
+}
+
+/* Reset moderne */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--background);
+}
+
+/* Header moderne avec effet glassmorphism */
+header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: var(--spacing-md);
+}
+
+/* Navigation moderne */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-full);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: var(--gradient-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Section Hero moderne */
+.hero {
+    min-height: 100vh;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('pattern.svg');
+    opacity: 0.1;
+    animation: float 20s linear infinite;
+}
+
+/* Cartes modernes avec effet glassmorphism */
+.card {
+    background: var(--gradient-surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Boutons modernes */
+.btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-full);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+/* Grilles modernes */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+}
+
+/* Animations modernes */
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+.animate {
+    animation: slideUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries modernes */
+@media (max-width: 768px) {
+    :root {
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Dark mode moderne */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0f172a;
+        --surface: #1e293b;
+        --text: #f8fafc;
+        --text-light: #94a3b8;
+    }
+
+    .card {
+        background: rgba(30, 41, 59, 0.8);
+    }
+
+    header {
+        background: rgba(30, 41, 59, 0.8);
+    }
+}
+
+/* Sections spécifiques */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-xl) 0;
+}
+
+.stat-card {
+    background: var(--gradient-surface);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonials modernes */
+.testimonial-card {
+    background: var(--gradient-surface);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    margin: var(--spacing-md);
+    position: relative;
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -40px auto 20px;
+    border: 4px solid var(--surface);
+}
+
+/* Footer moderne */
+footer {
+    background: var(--gradient-primary);
+    color: white;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* Ajouter des variables CSS pour une meilleure maintenabilité */
+:root {
+    /* Palette de couleurs moderne et vibrante */
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --accent: #f43f5e;
+    --background: #f8fafc;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --text-light: #64748b;
+    
+    /* Gradients modernes */
+    --gradient-primary: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    --gradient-accent: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+    
+    /* Ombres modernes */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    
+    /* Border radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 2rem;
+}
+
+/* Améliorer l'accessibilité */
+nav ul li a:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Ajouter une transition pour le menu burger */
+nav {
+    transition: all 0.3s ease;
+}
+
+/* Boutons modernes */
+.btn {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: var(--radius-sm);
+    border: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+[data-theme="dark"] {
+    --background-light: #1a1a1a;
+    --text-color: #ffffff;
+    /* autres variables pour le mode sombre */
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.medical-tests th,
+.medical-tests td {
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+}
+
+/* Améliorer la navigation au clavier */
+.interactive-list button:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Focus visible */
+*:focus-visible {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: 2px;
+}
+
+/* Skip to main content */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Amélioration des contrastes */
+.high-contrast {
+    --text-color: #000;
+    --background-light: #fff;
+}
+
+/* Réduction des animations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Style moderne du header */
+header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards modernes avec effet glassmorphism */
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Hero section moderne */
+.hero {
+    min-height: 100vh;
+    background: var(--gradient-primary);
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('pattern.svg');
+    opacity: 0.1;
+    animation: float 20s linear infinite;
+}
+
+/* Grille moderne pour les stats */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.stat-card {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+}
+
+/* Animations modernes */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Style moderne des sections */
+section {
+    padding: 5rem 2rem;
+    position: relative;
+}
+
+section:nth-child(even) {
+    background: var(--background);
+}
+
+/* Navigation moderne */
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Media queries pour le responsive design */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero {
+        padding: 1rem;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+}
