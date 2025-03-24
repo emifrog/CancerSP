@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Données de Recherche | Cancer chez les Sapeurs-Pompiers</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/api/placeholder/40/40" alt="Logo">
+                    <span>Cancer-Pompiers.Info</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html#about">À propos</a></li>
+                    <li><a href="../index.html#risks">Risques</a></li>
+                    <li><a href="../index.html#prevention">Prévention</a></li>
+                    <li><a href="../index.html#resources">Ressources</a></li>
+                    <li><a href="../index.html#news">Actualités</a></li>
+                    <li><a href="../index.html#database">Base de données</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Base de Données de Recherche</h1>
+            <div class="breadcrumbs">
+                <a href="../index.html">Accueil</a> > <span>Base de données</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="main-content">
+                    <h2>Accès à notre base de données scientifique</h2>
+                    <p class="intro-text">Notre base de données regroupe plus de 500 études scientifiques, rapports et publications sur les risques de cancer chez les sapeurs-pompiers. Utilisez les filtres ci-dessous pour affiner votre recherche et trouver les informations pertinentes pour votre situation.</p>
+                    
+                    <div class="database-search">
+                        <div class="search-filters">
+                            <div class="filter-row">
+                                <div class="filter-group">
+                                    <label>Type de cancer</label>
+                                    <select aria-label="Type de cancer" title="Sélectionner un type de cancer">
+                                        <option value="">Tous les types</option>
+                                        <option value="lung">Cancer du poumon</option>
+                                        <option value="mesothelioma">Mésothéliome</option>
+                                        <option value="colorectal">Cancer colorectal</option>
+                                        <option value="leukemia">Leucémies</option>
+                                        <option value="lymphoma">Lymphomes</option>
+                                        <option value="bladder">Cancer de la vessie</option>
+                                        <option value="prostate">Cancer de la prostate</option>
+                                        <option value="skin">Cancers cutanés</option>
+                                        <option value="kidney">Cancer du rein</option>
+                                    </select>
+                                </div>
+                                <div class="filter-group">
+                                    <label>Agent cancérigène</label>
+                                    <select aria-label="Agent cancérigène" title="Sélectionner un agent cancérigène">
+                                        <option value="">Tous les agents</option>
+                                        <option value="pah">Hydrocarbures aromatiques polycycliques (HAP)</option>
+                                        <option value="benzene">Benzène</option>
+                                        <option value="asbestos">Amiante</option>
+                                        <option value="pm">Particules fines (PM2.5, PM10)</option>
+                                        <option value="formaldehyde">Formaldéhyde</option>
+                                        <option value="metals">Métaux lourds</option>
+                                        <option value="dioxins">Dioxines et furanes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="filter-row">
+                                <div class="filter-group">
+                                    <label>Type de publication</label>
+                                    <select aria-label="Type de publication" title="Sélectionner un type de publication">
+                                        <option value="">Tous les types</option>
+                                        <option value="study">Étude épidémiologique</option>
+                                        <option value="review">Revue systématique</option>
+                                        <option value="meta">Méta-analyse</option>
+                                        <option value="case">Étude de cas</option>
+                                        <option value="report">Rapport technique</option>
+                                        <option value="guideline">Recommandation</option>
+                                    </select>
+                                </div>
+                                <div class="filter-group">
+                                    <label>Année de publication</label>
+                                    <div class="year-range">
+                                        <select aria-label="Année de début" title="Sélectionner l'année de début">
+                                            <option value="">Depuis</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2000">2000</option>
+                                        </select>
+                                        <span>à</span>
+                                        <select aria-label="Année de fin" title="Sélectionner l'année de fin">
+                                            <option value="">Jusqu'à</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2000">2000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-row">
+                                <div class="filter-group full-width">
+                                    <label>Mots-clés</label>
+                                    <input type="text" placeholder="Rechercher par mots-clés...">
+                                </div>
+                            </div>
+                            <div class="filter-actions">
+                                <button class="btn" aria-label="Rechercher" title="Lancer la recherche">Rechercher</button>
+                                <button class="btn-outline" aria-label="Réinitialiser les filtres" title="Réinitialiser les filtres de recherche">Réinitialiser les filtres</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="search-results">
+                        <div class="results-header">
+                            <h3>Résultats de recherche</h3>
+                            <p>352 études trouvées. Affinage par filtres recommandé.</p>
+                            <div class="results-controls">
+                                <select aria-label="Trier les résultats" title="Sélectionner un critère de tri">
+                                    <option value="relevance">Trier par pertinence</option>
+                                    <option value="date-desc">Date (plus récent)</option>
+                                    <option value="date-asc">Date (plus ancien)</option>
+                                    <option value="citations">Nombre de citations</option>
+                                </select>
+                                <div class="view-options">
+                                    <button class="active" aria-label="Vue liste" title="Afficher en liste"><i class="fas fa-list"></i></button>
+                                    <button aria-label="Vue grille" title="Afficher en grille"><i class="fas fa-th-large"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="study-list">
+                            <div class="study-item">
+                                <div class="study-meta">
+                                    <span class="study-type">Méta-analyse</span>
+                                    <span class="study-date">2025</span>
+                                </div>
+                                <h4>Association entre l'exposition professionnelle aux fumées d'incendie et le risque de cancer chez les sapeurs-pompiers : une méta-analyse de 30 études de cohorte</h4>
+                                <p class="study-authors">Dubois M, Martin S, Bernard T, et al.</p>
+                                <p class="study-journal">International Journal of Occupational and Environmental Health, 37(2), 145-162</p>
+                                <p class="study-abstract">Cette méta-analyse de 30 études de cohorte incluant plus de 120 000 sapeurs-pompiers a révélé un risque significativement accru de cancer du poumon (RR = 1,42, IC 95% 1,28-1,57), de mésothéliome (RR = 2,13, IC 95% 1,80-2,52), de cancer de la vessie (RR = 1,39, IC 95% 1,20-1,60) et de lymphome non hodgkinien (RR = 1,51, IC 95% 1,31-1,73) chez les sapeurs-pompiers par rapport à la population générale.</p>
+                                <div class="study-actions">
+                                    <a href="#" class="btn-small" aria-label="Lire le résumé complet" title="Afficher le résumé complet de l'étude">Lire le résumé complet</a>
+                                    <a href="#" class="btn-small" aria-label="Télécharger l'étude" title="Télécharger l'étude en PDF">Télécharger (PDF)</a>
+                                    <a href="#" class="btn-outline-small" aria-label="Ajouter à ma bibliothèque" title="Ajouter l'étude à votre bibliothèque personnelle">Ajouter à ma bibliothèque</a>
+                                </div>
+                            </div>
+                            
+                            <div class="study-item">
+                                <div class="study-meta">
+                                    <span class="study-type">Étude de cohorte</span>
+                                    <span class="study-date">2024</span>
+                                </div>
+                                <h4>Incidence du cancer du rein chez les sapeurs-pompiers français : résultats d'une étude de cohorte nationale sur 15 ans</h4>
+                                <p class="study-authors">Martin S, Leroy J, Moreau C, et al.</p>
+                                <p class="study-journal">Occupational and Environmental Medicine, 81(3), 210-219</p>
+                                <p class="study-abstract">Cette étude de cohorte prospective a suivi 20 457 sapeurs-pompiers français pendant 15 ans. Les résultats montrent une incidence du cancer du rein significativement plus élevée que dans la population générale (SIR = 1,27, IC 95% 1,09-1,48), avec une relation dose-réponse entre le nombre d'années de service et le risque de cancer.</p>
+                                <div class="study-actions">
+                                    <a href="#" class="btn-small" aria-label="Lire le résumé complet" title="Afficher le résumé complet de l'étude">Lire le résumé complet</a>
+                                    <a href="#" class="btn-small" aria-label="Télécharger l'étude" title="Télécharger l'étude en PDF">Télécharger (PDF)</a>
+                                    <a href="#" class="btn-outline-small" aria-label="Ajouter à ma bibliothèque" title="Ajouter l'étude à votre bibliothèque personnelle">Ajouter à ma bibliothèque</a>
+                                </div>
+                            </div>
+                            
+                            <div class="study-item">
+                                <div class="study-meta">
+                                    <span class="study-type">Revue systématique</span>
+                                    <span class="study-date">2023</span>
+                                </div>
+                                <h4>Efficacité des mesures de décontamination pour réduire l'exposition aux agents cancérigènes chez les sapeurs-pompiers : une revue systématique</h4>
+                                <p class="study-authors">Dupont A, Bernard T, Petit F, et al.</p>
+                                <p class="study-journal">Journal of Occupational Health, 65(1), 78-95</p>
+                                <p class="study-abstract">Cette revue systématique a évalué l'efficacité de différentes méthodes de décontamination pour réduire l'exposition aux agents cancérigènes chez les sapeurs-pompiers. Les résultats montrent que la décontamination sur site immédiatement après l'intervention, suivie d'une douche complète dans l'heure, peut réduire jusqu'à 85% la contamination cutanée par les HAP.</p>
+                                <div class="study-actions">
+                                    <a href="#" class="btn-small" aria-label="Lire le résumé complet" title="Afficher le résumé complet de l'étude">Lire le résumé complet</a>
+                                    <a href="#" class="btn-small" aria-label="Télécharger l'étude" title="Télécharger l'étude en PDF">Télécharger (PDF)</a>
+                                    <a href="#" class="btn-outline-small" aria-label="Ajouter à ma bibliothèque" title="Ajouter l'étude à votre bibliothèque personnelle">Ajouter à ma bibliothèque</a>
+                                </div>
+                            </div>
+                            
+                            <div class="study-item">
+                                <div class="study-meta">
+                                    <span class="study-type">Étude transversale</span>
+                                    <span class="study-date">2023</span>
+                                </div>
+                                <h4>Biomarqueurs d'exposition aux HAP chez les sapeurs-pompiers : comparaison avant et après mise en place d'un protocole de décontamination standardisé</h4>
+                                <p class="study-authors">Rousseau P, Martin S, Dubois M, et al.</p>
+                                <p class="study-journal">International Archives of Occupational and Environmental Health, 96(2), 245-258</p>
+                                <p class="study-abstract">Cette étude a mesuré les niveaux de 1-hydroxypyrène urinaire (biomarqueur d'exposition aux HAP) chez 150 sapeurs-pompiers avant et après la mise en place d'un protocole de décontamination standardisé. Les résultats montrent une réduction significative de 62% des niveaux de 1-hydroxypyrène après l'implémentation du protocole.</p>
+                                <div class="study-actions">
+                                    <a href="#" class="btn-small" aria-label="Lire le résumé complet" title="Afficher le résumé complet de l'étude">Lire le résumé complet</a>
+                                    <a href="#" class="btn-small" aria-label="Télécharger l'étude" title="Télécharger l'étude en PDF">Télécharger (PDF)</a>
+                                    <a href="#" class="btn-outline-small" aria-label="Ajouter à ma bibliothèque" title="Ajouter l'étude à votre bibliothèque personnelle">Ajouter à ma bibliothèque</a>
+                                </div>
+                            </div>
+                            
+                            <div class="study-item">
+                                <div class="study-meta">
+                                    <span class="study-type">Étude cas-témoins</span>
+                                    <span class="study-date">2022</span>
+                                </div>
+                                <h4>Facteurs de risque de lymphome non hodgkinien chez les sapeurs-pompiers : une étude cas-témoins multicentrique</h4>
+                                <p class="study-authors">Leroy J, Petit F, Dubois M, et al.</p>
+                                <p class="study-journal">Cancer Epidemiology, 77, 101982</p>
+                                <p class="study-abstract">Cette étude cas-témoins a comparé 120 sapeurs-pompiers atteints de lymphome non hodgkinien à 360 témoins appariés. Les résultats montrent une association significative entre le risque de lymphome et l'exposition cumulée aux fumées d'incendie (OR = 1,87, IC 95% 1,42-2,46), ainsi qu'avec l'absence de port systématique de l'ARI (OR = 2,34, IC 95% 1,76-3,12).</p>
+                                <div class="study-actions">
+                                    <a href="#" class="btn-small" aria-label="Lire le résumé complet" title="Afficher le résumé complet de l'étude">Lire le résumé complet</a>
+                                    <a href="#" class="btn-small" aria-label="Télécharger l'étude" title="Télécharger l'étude en PDF">Télécharger (PDF)</a>
+                                    <a href="#" class="btn-outline-small" aria-label="Ajouter à ma bibliothèque" title="Ajouter l'étude à votre bibliothèque personnelle">Ajouter à ma bibliothèque</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pagination">
+                            <a href="#" class="active" aria-label="Page 1" title="Aller à la page 1">1</a>
+                            <a href="#" aria-label="Page 2" title="Aller à la page 2">2</a>
+                            <a href="#" aria-label="Page 3" title="Aller à la page 3">3</a>
+                            <a href="#" aria-label="Page 4" title="Aller à la page 4">4</a>
+                            <a href="#" aria-label="Page 5" title="Aller à la page 5">5</a>
+                            <a href="#" class="next" aria-label="Page suivante" title="Aller à la page suivante"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="database-info">
+                        <h3>À propos de notre base de données</h3>
+                        <p>Notre base de données est mise à jour mensuellement pour inclure les dernières publications scientifiques sur le cancer chez les sapeurs-pompiers. Toutes les études sont évaluées par notre comité scientifique avant d'être ajoutées à la base.</p>
+                        
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fas fa-search"></i></div>
+                                <h4>Sources</h4>
+                                <p>Les études proviennent de revues scientifiques à comité de lecture, de rapports gouvernementaux et d'organismes de recherche reconnus.</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fas fa-language"></i></div>
+                                <h4>Langues</h4>
+                                <p>Les publications sont disponibles en français et en anglais, avec des résumés traduits pour les publications dans d'autres langues.</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fas fa-file-download"></i></div>
+                                <h4>Accès</h4>
+                                <p>L'accès complet aux publications est gratuit pour tous les sapeurs-pompiers et professionnels de santé enregistrés sur notre plateforme.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Recherches populaires</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag" aria-label="Cancer du poumon" title="Rechercher des études sur le cancer du poumon">Cancer du poumon</a>
+                            <a href="#" class="tag" aria-label="HAP" title="Rechercher des études sur les HAP">HAP</a>
+                            <a href="#" class="tag" aria-label="Décontamination" title="Rechercher des études sur la décontamination">Décontamination</a>
+                            <a href="#" class="tag" aria-label="Prévention" title="Rechercher des études sur la prévention">Prévention</a>
+                            <a href="#" class="tag" aria-label="Amiante" title="Rechercher des études sur l'amiante">Amiante</a>
+                            <a href="#" class="tag" aria-label="Benzène" title="Rechercher des études sur le benzène">Benzène</a>
+                            <a href="#" class="tag" aria-label="Mésothéliome" title="Rechercher des études sur le mésothéliome">Mésothéliome</a>
+                            <a href="#" class="tag" aria-label="EPI" title="Rechercher des études sur les EPI">EPI</a>
+                            <a href="#" class="tag" aria-label="Biomarqueurs" title="Rechercher des études sur les biomarqueurs">Biomarqueurs</a>
+                            <a href="#" class="tag" aria-label="Exposition chronique" title="Rechercher des études sur l'exposition chronique">Exposition chronique</a>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Ma bibliothèque</h3>
+                        <p>Connectez-vous pour accéder à votre bibliothèque personnelle d'études enregistrées.</p>
+                        <a href="../index.html#member" class="btn btn-full" aria-label="Se connecter" title="Se connecter pour accéder à votre bibliothèque personnelle">Se connecter</a>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Dernières études ajoutées</h3>
+                        <ul class="recent-studies">
+                            <li>
+                                <a href="#" aria-label="Étude sur l'association entre l'exposition professionnelle aux fumées d'incendie et le risque de cancer chez les sapeurs-pompiers" title="Afficher l'étude sur l'association entre l'exposition professionnelle aux fumées d'incendie et le risque de cancer chez les sapeurs-pompiers">
+                                    <span class="study-title">Association entre l'exposition professionnelle aux fumées d'incendie et le risque de cancer chez les sapeurs-pompiers</span>
+                                    <span class="study-date">Ajoutée le 15/03/2025</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Étude sur l'efficacité des cagoules filtrantes pour réduire l'exposition aux particules fines" title="Afficher l'étude sur l'efficacité des cagoules filtrantes pour réduire l'exposition aux particules fines">
+                                    <span class="study-title">Efficacité des cagoules filtrantes pour réduire l'exposition aux particules fines</span>
+                                    <span class="study-date">Ajoutée le 10/03/2025</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Étude sur l'impact des protocoles de décontamination sur les niveaux de contaminants dans les casernes" title="Afficher l'étude sur l'impact des protocoles de décontamination sur les niveaux de contaminants dans les casernes">
+                                    <span class="study-title">Impact des protocoles de décontamination sur les niveaux de contaminants dans les casernes</span>
+                                    <span class="study-date">Ajoutée le 05/03/2025</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Étude sur le suivi à long terme des sapeurs-pompiers exposés à l'amiante lors d'interventions" title="Afficher l'étude sur le suivi à long terme des sapeurs-pompiers exposés à l'amiante lors d'interventions">
+                                    <span class="study-title">Suivi à long terme des sapeurs-pompiers exposés à l'amiante lors d'interventions</span>
+                                    <span class="study-date">Ajoutée le 28/02/2025</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget cta-widget">
+                        <h3>Besoin d'aide pour votre recherche ?</h3>
+                        <p>Notre équipe de documentalistes peut vous aider à trouver les études pertinentes pour votre situation.</p>
+                        <a href="../index.html#contact" class="btn btn-full" aria-label="Demander de l'aide" title="Demander de l'aide pour votre recherche">Demander de l'aide</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Contribuez à la recherche</h2>
+            <p>Participez à nos études en cours pour faire avancer la connaissance sur les risques de cancer chez les sapeurs-pompiers</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn" aria-label="Voir les études en cours" title="Voir les études en cours">Voir les études en cours</a>
+                <a href="../index.html#contact" class="btn btn-outline" aria-label="Nous contacter" title="Nous contacter pour participer à une étude">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/api/placeholder/40/40" alt="Logo">
+                        <span>Cancer-Pompiers.Info</span>
+                    </div>
+                    <p>Une ressource nationale dédiée à la prévention, la détection précoce et le soutien des sapeurs-pompiers face aux risques de cancer liés à leur profession.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#about" aria-label="À propos" title="Aller à la page À propos">À propos</a></li>
+                        <li><a href="../index.html#risks" aria-label="Risques" title="Aller à la page Risques">Risques</a></li>
+                        <li><a href="../index.html#prevention" aria-label="Prévention" title="Aller à la page Prévention">Prévention</a></li>
+                        <li><a href="../index.html#resources" aria-label="Ressources" title="Aller à la page Ressources">Ressources</a></li>
+                        <li><a href="../index.html#news" aria-label="Actualités" title="Aller à la page Actualités">Actualités</a></li>
+                        <li><a href="../index.html#database" aria-label="Base de données" title="Aller à la page Base de données">Base de données</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@cancer-pompiers.info" aria-label="Envoyer un email" title="Envoyer un email">contact@cancer-pompiers.info</a></li>
+                        <li><i class="fas fa-phone"></i> +33 (0)1 23 45 67 89</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de la République, 75011 Paris</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" title="Suivre sur Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" title="Suivre sur Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" title="Suivre sur LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube" title="Suivre sur YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram" title="Suivre sur Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <form>
+                            <input type="email" placeholder="Votre email" aria-label="Adresse email" title="Entrer votre adresse email">
+                            <button type="submit" aria-label="S'inscrire à la newsletter" title="S'inscrire à la newsletter"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cancer-Pompiers.Info - Tous droits réservés</p>
+                <ul class="footer-legal">
+                    <li><a href="#" aria-label="Mentions légales" title="Voir les mentions légales">Mentions légales</a></li>
+                    <li><a href="#" aria-label="Politique de confidentialité" title="Voir la politique de confidentialité">Politique de confidentialité</a></li>
+                    <li><a href="#" aria-label="Conditions d'utilisation" title="Voir les conditions d'utilisation">Conditions d'utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>

@@ -3,195 +3,475 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancers chez les pompiers | Prévention et Information</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Meta descriptions spécifiques -->
-    <meta name="description" content="Découvrez les informations essentielles sur les risques de cancers chez les pompiers. Prévention, types de cancers, facteurs de risque et soutien pour les sapeurs-pompiers.">
-    <meta name="keywords" content="pompiers, cancer professionnel, prévention cancer, santé pompiers, risques métier pompier, protection pompiers, cancer du poumon pompier, lymphome pompier, surveillance médicale pompier">
-    <meta name="author" content="Association de Prévention des Cancers chez les Pompiers">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="fr">
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Cancers chez les pompiers | Prévention et Information">
-    <meta property="og:description" content="Découvrez les informations essentielles sur les risques de cancers chez les pompiers. Prévention, types de cancers, facteurs de risque et soutien pour les sapeurs-pompiers.">
-    <meta property="og:image" content="https://votre-domaine.com/images/og-image.jpg">
-    <meta property="og:url" content="https://votre-domaine.com">
-    <meta property="og:type" content="website">
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cancers chez les pompiers | Prévention et Information">
-    <meta name="twitter:description" content="Découvrez les informations essentielles sur les risques de cancers chez les pompiers. Prévention, types de cancers, facteurs de risque et soutien pour les sapeurs-pompiers.">
-    <meta name="twitter:image" content="https://votre-domaine.com/images/og-image.jpg">
-    <link rel="icon" type="image/png" href="favicon.png">    
+    <meta name="description" content="Ressource nationale dédiée à la prévention, la détection précoce et le soutien des sapeurs-pompiers face aux risques de cancer liés à leur profession">
+    <title>Cancer chez les Sapeurs-Pompiers | Ressource Nationale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Prévention des Cancers chez les Pompiers</h1>
-        <div class="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="container">
+            <nav class="navbar" aria-label="Navigation principale">
+                <div class="logo">
+                    <a href="index.html" aria-label="Retour à l'accueil" title="Retour à l'accueil">
+                        <img src="images/logo-remove.png" alt="Logo">
+                    </a>
+                    <!--<span>Cancer-Pompiers.Info</span>-->
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Ouvrir le menu" title="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about" aria-label="À propos de l'initiative" title="En savoir plus sur l'initiative">À propos</a></li>
+                    <li><a href="#risks" aria-label="Comprendre les risques de cancer" title="Découvrir les risques de cancer">Risques</a></li>
+                    <li><a href="#prevention" aria-label="Mesures de prévention" title="En savoir plus sur la prévention">Prévention</a></li>
+                    <li><a href="#resources" aria-label="Ressources disponibles" title="Consulter les ressources">Ressources</a></li>
+                    <li><a href="#news" aria-label="Actualités et avancées" title="Découvrir les actualités">Actualités</a></li>
+                    <li><a href="#database" aria-label="Base de données de recherche" title="Consulter la base de données">Base de données</a></li>
+                    <li><a href="#contact" aria-label="Contactez-nous" title="Nous contacter">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="hidden" aria-label="Menu principal">
-            <ul role="menubar">
-                <li role="none">
-                    <a href="#accueil" role="menuitem">Accueil</a>
-                </li>
-                <li><a href="#facteurs">Facteurs de risque</a></li>
-                <li><a href="#types">Types de cancers</a></li>
-                <li><a href="#prevention">Prévention</a></li>
-                <li><a href="#soutien">Soutien</a></li>
-                <li><a href="#droits">Droits</a></li>
-                <li><a href="#actualites">Actualités</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>      
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1 class="text-gradient">Protégeons nos héros</h1>
-            <p class="hero-subtitle">Comprendre et prévenir les risques de cancer chez les pompiers</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary">En savoir plus</button>
-                <button class="btn btn-outline">Contactez-nous</button>
-            </div>
+        <div class="container">
+            <h1 class="hero-title">Association Solidarité Autonome</h1>
+            <h2>Protection et information contre le cancer chez les sapeurs-pompiers</h2>
+            <p>Une ressource nationale dédiée à la prévention, la détection précoce et le soutien des sapeurs-pompiers face aux risques de cancer liés à leur profession</p>
+            <a href="#resources" class="btn" aria-label="Découvrir nos ressources disponibles" title="Découvrir nos ressources">Découvrir nos ressources</a>
         </div>
-        <div class="hero-pattern"></div>
     </section>
 
-    <section id="accueil">
-        <h2>Comprendre les Risques Professionnels</h2>
-        <p>Les pompiers font face à des risques accrus de cancers. Découvrez comment nous pouvons les aider.</p>
-        <div class="stats">
-            <div>30% Risque accru</div>
-            <div>5 Types de cancers fréquents</div>
-            <div>100+ Témoignages</div>
-        </div>
-    </section>
-    <section class="stats">
-        <div class="stats-grid">
-            <div class="stat-card" data-aos="fade-up">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">30%</div>
-                <div class="stat-label">Risque accru</div>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>À propos de cette initiative</h2>
             </div>
-            <!-- Répéter pour autres stats -->
-        </div>
-    </section>
-    
-    <section class="testimonials">
-        <h2>Témoignages de pompiers</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial-card">
-                <div class="testimonial-avatar">
-                    <img src="avatar.jpg" alt="Portrait du pompier">
+            <p class="text-center">Les sapeurs-pompiers sont exposés à de nombreux agents cancérigènes dans l'exercice de leur profession. Cette plateforme vise à centraliser les informations scientifiques, les ressources de prévention et le soutien nécessaire pour protéger ceux qui nous protègent.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('images/sensibilisation.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Sensibilisation</h3>
+                        <p>Informer sur les risques spécifiques auxquels sont exposés les sapeurs-pompiers et les mécanismes de développement du cancer.</p>
+                        <a href="#" class="btn" aria-label="En savoir plus sur la sensibilisation" title="En savoir plus">En savoir plus</a>
+                    </div>
                 </div>
-                <blockquote>
-                    <p>"Témoignage..."</p>
-                    <cite>- Jean Dupont, Pompier</cite>
-                </blockquote>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('images/prévention.png');"></div>
+                    <div class="card-content">
+                        <h3>Prévention</h3>
+                        <p>Proposer des stratégies concrètes pour réduire l'exposition aux agents cancérigènes avant, pendant et après les interventions.</p>
+                        <a href="#" class="btn" aria-label="En savoir plus sur la prévention" title="En savoir plus">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('images/soutien.png');"></div>
+                    <div class="card-content">
+                        <h3>Soutien</h3>
+                        <p>Accompagner les sapeurs-pompiers atteints de cancer et leurs familles avec des ressources adaptées et un réseau de solidarité.</p>
+                        <a href="#" class="btn" aria-label="En savoir plus sur le soutien" title="En savoir plus">En savoir plus</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="slider-controls">
-            <button class="prev" aria-label="Témoignage précédent">←</button>
-            <button class="next" aria-label="Témoignage suivant">→</button>
         </div>
     </section>
 
-    <section id="facteurs" class="risk-factors">
-        <h2>Facteurs de Risque Majeurs</h2>
-        <div class="risk-grid">
-            <article>
-                <h3>Exposition aux Fumées Toxiques</h3>
-                <!-- Contenu -->
-            </article>
-            <article>
-                <h3>Contamination des Équipements</h3>
-                <!-- Contenu -->
-            </article>
-            <article>
-                <h3>Exposition aux Substances Chimiques</h3>
-                <!-- Contenu -->
-            </article>
+    <section id="risks" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Comprendre les risques</h2>
+            </div>
+            <div class="info-columns">
+                <div class="info-column">
+                    <h3>Agents cancérigènes courants</h3>
+                    <ul>
+                        <li>Fumées d'incendie contenant des HAP</li>
+                        <li>Benzène et autres COV</li>
+                        <li>Amiante dans les bâtiments anciens</li>
+                        <li>Particules fines (PM2.5 et PM10)</li>
+                        <li>Formaldéhyde et autres aldéhydes</li>
+                        <li>Métaux lourds (plomb, cadmium, chrome)</li>
+                        <li>Dioxines et furanes</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3>Cancers les plus fréquents</h3>
+                    <ul>
+                        <li>Cancer du poumon</li>
+                        <li>Mésothéliome</li>
+                        <li>Cancer colorectal</li>
+                        <li>Leucémies et lymphomes</li>
+                        <li>Cancer de la vessie</li>
+                        <li>Cancer de la prostate</li>
+                        <li>Mélanome et autres cancers cutanés</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3>Facteurs aggravants</h3>
+                    <ul>
+                        <li>Exposition répétée sur de longues périodes</li>
+                        <li>Contamination croisée des équipements</li>
+                        <li>Absorption cutanée accrue par la transpiration</li>
+                        <li>Inhalation plus importante durant l'effort</li>
+                        <li>Manque de décontamination appropriée</li>
+                        <li>Effets synergiques entre polluants</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="types" class="cancer-types">
-        <h2>Types de Cancers Professionnels</h2>
-        <div class="cancer-grid">
-            <article>
-                <h3>Cancer du Poumon</h3>
-                <!-- Contenu -->
-            </article>
-            <article>
-                <h3>Lymphomes</h3>
-                <!-- Contenu -->
-            </article>
-            <article>
-                <h3>Cancers de la Peau</h3>
-                <!-- Contenu -->
-            </article>
-        </div>
-    </section>
-    
-    <section id="prevention">
-        <h2>Mesures de Prévention Efficaces</h2>
-        <div class="prevention-content">
-            <article>
-                <h3>Équipements de Protection (EPI)</h3>
-                <!-- Contenu -->
-            </article>
-            <article>
-                <h3>Protocoles de Décontamination</h3>
-                <!-- Contenu -->
-            </article>
-            <article>
-                <h3>Suivi Médical Régulier</h3>
-                <!-- Contenu -->
-            </article>
-        </div>
-    </section>
-    
-    <section id="droits">
-        <div class="rights-content">
-            <div class="interactive-list">
-                <!-- Liste des cancers reconnus -->
+    <section id="prevention" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mesures de prévention</h2>
             </div>
-            <div class="administrative-steps">
-                <!-- Démarches administratives -->
-            </div>
-            <div class="jurisprudence">
-                <!-- Exemples de jurisprudence -->
+            <div class="info-columns">
+                <div class="info-column">
+                    <h3>Avant l'intervention</h3>
+                    <ul>
+                        <li>Formation aux risques cancérigènes</li>
+                        <li>Vérification et entretien des EPI</li>
+                        <li>Préparation du matériel de décontamination</li>
+                        <li>Établissement de zones propres/sales</li>
+                        <li>Briefing sur les risques spécifiques</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3>Pendant l'intervention</h3>
+                    <ul>
+                        <li>Port systématique de l'ARI</li>
+                        <li>Respect des zones et procédures</li>
+                        <li>Limitation du temps d'exposition</li>
+                        <li>Rotation des équipes</li>
+                        <li>Surveillance mutuelle des équipements</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3>Après l'intervention</h3>
+                    <ul>
+                        <li>Décontamination primaire sur site</li>
+                        <li>Transport sécurisé des équipements</li>
+                        <li>Douche dans les 60 minutes</li>
+                        <li>Nettoyage approfondi des EPI</li>
+                        <li>Surveillance médicale régulière</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    
-    <section id="infographies" class="media-section">
-        <h2>Comprendre les Risques</h2>
-        
-        <!-- Graphique interactif -->
-        <div class="chart-container">
-            <canvas id="riskChart" aria-label="Graphique des risques par type d'intervention">
-                <p>Votre navigateur ne supporte pas Canvas. Description textuelle des données...</p>
-            </canvas>
-        </div>
 
-        <!-- Vidéo de prévention -->
-        <div class="video-container">
-            <video id="preventionVideo" controls preload="none" poster="assets/video-poster.jpg">
-                <source src="assets/prevention.mp4" type="video/mp4">
-                <source src="assets/prevention.webm" type="video/webm">
-                <track kind="captions" src="assets/captions.vtt" srclang="fr" label="Français">
-                <p>Votre navigateur ne supporte pas la vidéo.</p>
-            </video>
+    <section id="resources" class="section resources">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ressources disponibles</h2>
+            </div>
+            <div class="resource-list">
+                <div class="resource-item">
+                    <h3>Publications scientifiques</h3>
+                    <p>Accédez aux dernières études sur les risques cancérigènes chez les sapeurs-pompiers et les avancées en matière de prévention.</p>
+                    <a href="#" class="btn" aria-label="Consulter les publications" title="Consulter les publications">Consulter</a>
+                </div>
+                <div class="resource-item">
+                    <h3>Protocoles de décontamination</h3>
+                    <p>Guides pratiques et fiches techniques pour une décontamination efficace après intervention.</p>
+                    <a href="#" class="btn" aria-label="Télécharger les protocoles" title="Télécharger les protocoles">Télécharger</a>
+                </div>
+                <div class="resource-item">
+                    <h3>Suivi médical</h3>
+                    <p>Informations sur les examens recommandés et la fréquence de surveillance selon l'exposition.</p>
+                    <a href="#" class="btn" aria-label="En savoir plus sur le suivi médical" title="En savoir plus">En savoir plus</a>
+                </div>
+                <div class="resource-item">
+                    <h3>Soutien psychologique</h3>
+                    <p>Ressources pour les sapeurs-pompiers atteints de cancer et leurs proches.</p>
+                    <a href="#" class="btn" aria-label="Contacter le soutien psychologique" title="Contacter le soutien psychologique">Contacter</a>
+                </div>
+                <div class="resource-item">
+                    <h3>Formation continue</h3>
+                    <p>Modules de formation en ligne et présentiel sur la prévention des risques cancérigènes.</p>
+                    <a href="#" class="btn" aria-label="S'inscrire à la formation" title="S'inscrire à la formation">S'inscrire</a>
+                </div>
+                <div class="resource-item">
+                    <h3>Équipements recommandés</h3>
+                    <p>Sélection d'EPI et matériels de décontamination conformes aux dernières normes.</p>
+                    <a href="#" class="btn" aria-label="Consulter les équipements recommandés" title="Consulter les équipements recommandés">Consulter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Témoignages</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Lieutenant Thomas M.</h3>
+                        <p>"Après 20 ans de service et un diagnostic de cancer du poumon, j'ai réalisé l'importance capitale de la prévention. Les nouvelles générations doivent être mieux protégées que nous ne l'avons été."</p>
+                        <div class="video-container">
+                            <img src="/api/placeholder/320/180" alt="Vidéo témoignage" style="width: 100%; border-radius: 4px; margin-top: 15px;">
+                            <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(211, 47, 47, 0.8); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;" aria-label="Lire la suite de la vidéo" title="Lire la suite de la vidéo">
+                                <span style="font-size: 24px;">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Médecin-Colonel Sophie D.</h3>
+                        <p>"La reconnaissance des cancers comme maladies professionnelles est une avancée, mais notre priorité doit être de réduire drastiquement l'exposition aux agents cancérigènes."</p>
+                        <div class="video-container">
+                            <img src="/api/placeholder/320/180" alt="Vidéo témoignage" style="width: 100%; border-radius: 4px; margin-top: 15px;">
+                            <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(211, 47, 47, 0.8); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;" aria-label="Lire la suite de la vidéo" title="Lire la suite de la vidéo">
+                                <span style="font-size: 24px;">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Caporal-chef Kevin L.</h3>
+                        <p>"Les protocoles de décontamination mis en place dans notre caserne ont changé notre façon de travailler. C'est contraignant, mais vital pour notre santé à long terme."</p>
+                        <div class="video-container">
+                            <img src="/api/placeholder/320/180" alt="Vidéo témoignage" style="width: 100%; border-radius: 4px; margin-top: 15px;">
+                            <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(211, 47, 47, 0.8); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;" aria-label="Lire la suite de la vidéo" title="Lire la suite de la vidéo">
+                                <span style="font-size: 24px;">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#" class="btn" aria-label="Voir tous les témoignages" title="Voir tous les témoignages">Voir tous les témoignages</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="section resources">
+        <div class="container">
+            <div class="section-title">
+                <h2>Actualités et Avancées</h2>
+            </div>
+            <div class="news-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+                <div class="news-item" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="/api/placeholder/400/200" alt="Actualité" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <span style="background-color: var(--accent-color); color: var(--secondary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">RECHERCHE</span>
+                        <h3 style="margin: 10px 0;">Nouvelle étude sur l'exposition aux fumées d'incendie</h3>
+                        <p style="color: #777; font-size: 0.8rem; margin-bottom: 10px;">15 mars 2025</p>
+                        <p>Une étude récente démontre le lien entre l'exposition répétée aux fumées d'incendie et l'augmentation des risques de cancer du système respiratoire.</p>
+                        <a href="#" style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px; font-size: 0.9rem;" aria-label="Lire la suite de l'actualité" title="Lire la suite de l'actualité">Lire la suite →</a>
+                    </div>
+                </div>
+                <div class="news-item" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="/api/placeholder/400/200" alt="Actualité" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <span style="background-color: var(--accent-color); color: var(--secondary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">LÉGISLATION</span>
+                        <h3 style="margin: 10px 0;">Reconnaissance élargie des maladies professionnelles</h3>
+                        <p style="color: #777; font-size: 0.8rem; margin-bottom: 10px;">2 mars 2025</p>
+                        <p>Le nouveau décret inclut désormais plusieurs types de cancers dans la liste des maladies professionnelles reconnues pour les sapeurs-pompiers.</p>
+                        <a href="#" style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px; font-size: 0.9rem;" aria-label="Lire la suite de l'actualité" title="Lire la suite de l'actualité">Lire la suite →</a>
+                    </div>
+                </div>
+                <div class="news-item" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="/api/placeholder/400/200" alt="Actualité" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <span style="background-color: var(--accent-color); color: var(--secondary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">ÉQUIPEMENT</span>
+                        <h3 style="margin: 10px 0;">Nouveaux EPI avec filtration améliorée</h3>
+                        <p style="color: #777; font-size: 0.8rem; margin-bottom: 10px;">25 février 2025</p>
+                        <p>Une nouvelle génération d'équipements de protection individuelle avec systèmes de filtration avancés est en cours de déploiement dans plusieurs SDIS.</p>
+                        <a href="#" style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px; font-size: 0.9rem;" aria-label="Lire la suite de l'actualité" title="Lire la suite de l'actualité">Lire la suite →</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#" class="btn" aria-label="Voir toutes les actualités" title="Voir toutes les actualités">Toutes les actualités</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="database" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Base de Données de Recherche</h2>
+            </div>
+            <p class="text-center">Accédez à notre base de données complète d'études scientifiques, rapports et publications sur les risques de cancer chez les sapeurs-pompiers.</p>
+            
+            <div style="background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 30px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+                    <div style="flex: 1; min-width: 200px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 600;">Type de cancer</label>
+                        <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" aria-label="Type de cancer" title="Sélectionner un type de cancer">
+                            <option value="">Tous les types</option>
+                            <option value="poumon">Cancer du poumon</option>
+                            <option value="mesotheliome">Mésothéliome</option>
+                            <option value="leucemie">Leucémie</option>
+                            <option value="vessie">Cancer de la vessie</option>
+                            <option value="prostate">Cancer de la prostate</option>
+                            <option value="peau">Cancer de la peau</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 600;">Agent cancérigène</label>
+                        <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" aria-label="Agent cancérigène" title="Sélectionner un agent cancérigène">
+                            <option value="">Tous les agents</option>
+                            <option value="hap">Hydrocarbures aromatiques polycycliques</option>
+                            <option value="benzene">Benzène</option>
+                            <option value="amiante">Amiante</option>
+                            <option value="formaldehyde">Formaldéhyde</option>
+                            <option value="metaux">Métaux lourds</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 600;">Année de publication</label>
+                        <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" aria-label="Année de publication" title="Sélectionner une année de publication">
+                            <option value="">Toutes les années</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="older">2020 et avant</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <input type="text" placeholder="Rechercher par mot-clé..." style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px 0 0 4px;" aria-label="Rechercher par mot-clé" title="Rechercher par mot-clé">
+                    <button class="btn" style="border-radius: 0 4px 4px 0; margin: 0;" aria-label="Rechercher dans la base de données" title="Rechercher dans la base de données">Rechercher</button>
+                </div>
+                
+                <div style="background-color: #f9f9f9; border-radius: 4px; padding: 15px; margin-top: 20px;">
+                    <h3>Résultats de recherche</h3>
+                    <p style="color: #777; font-size: 0.9rem;">352 études trouvées. Affinage par filtres recommandé.</p>
+                    
+                    <div class="result-items" style="margin-top: 15px;">
+                        <!-- Résultat de recherche 1 -->
+                        <div style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+                            <h4 style="margin-bottom: 5px;">Évaluation de l'exposition aux substances cancérigènes lors des interventions sur feux de structure</h4>
+                            <p style="color: #777; font-size: 0.8rem; margin-bottom: 5px;">Dubois et al. (2024) - Journal International de Médecine du Travail</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 10px;">Cette étude évalue les niveaux d'exposition aux agents cancérigènes chez 120 sapeurs-pompiers français pendant une période de 2 ans.</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 5px;">
+                                <span style="background-color: #e0e0e0; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Cancer du poumon</span>
+                                <span style="background-color: #e0e0e0; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">HAP</span>
+                                <span style="background-color: #e0e0e0; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Benzène</span>
+                            </div>
+                            <a href="#" style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 5px; font-size: 0.9rem;" aria-label="Accéder à l'étude complète" title="Accéder à l'étude complète">Accéder à l'étude complète →</a>
+                        </div>
+                        
+                        <!-- Résultat de recherche 2 -->
+                        <div style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+                            <h4 style="margin-bottom: 5px;">Efficacité des protocoles de décontamination post-incendie dans la réduction de l'exposition</h4>
+                            <p style="color: #777; font-size: 0.8rem; margin-bottom: 5px;">Martinez et al. (2023) - Revue Européenne de Santé au Travail</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 10px;">Analyse comparative de différents protocoles de décontamination et leur impact sur les niveaux de contaminants mesurés.</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 5px;">
+                                <span style="background-color: #e0e0e0; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Décontamination</span>
+                                <span style="background-color: #e0e0e0; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Multiples agents</span>
+                                <span style="background-color: #e0e0e0; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Prévention</span>
+                            </div>
+                            <a href="#" style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 5px; font-size: 0.9rem;" aria-label="Accéder à l'étude complète" title="Accéder à l'étude complète">Accéder à l'étude complète →</a>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="#" class="btn" aria-label="Voir plus de résultats" title="Voir plus de résultats">Voir plus de résultats</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
-    <!-- Autres sections ici -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-nous</h2>
+            </div>
+            <p class="text-center">Des questions? Besoin de conseils ou de ressources spécifiques? Notre équipe est là pour vous accompagner.</p>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#" class="btn" aria-label="Formulaire de contact" title="Formulaire de contact">Formulaire de contact</a>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Windsurf. Tous droits réservés.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="images/logo.jpg" alt="Logo" width="80" height="80">
+                    <p>Une initiative nationale pour la protection des sapeurs-pompiers contre les risques de cancer liés à leur profession.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#about" aria-label="À propos de l'initiative" title="En savoir plus sur l'initiative">À propos</a></li>
+                        <li><a href="#risks" aria-label="Comprendre les risques de cancer" title="Découvrir les risques de cancer">Risques</a></li>
+                        <li><a href="#prevention" aria-label="Mesures de prévention" title="En savoir plus sur la prévention">Prévention</a></li>
+                        <li><a href="#resources" aria-label="Ressources disponibles" title="Consulter les ressources">Ressources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#" aria-label="Formulaire de contact" title="Formulaire de contact">Formulaire</a></li>
+                        <li><a href="#" aria-label="Numéro d'urgence" title="Numéro d'urgence">Numéro d'urgence</a></li>
+                        <li><a href="#" aria-label="Newsletter" title="Newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 XRWeb - Tous droits réservés</p>
+            </div>
+        </div>
     </footer>
-    <script src="main.js"></script>
+
+    <!-- Bouton pour remonter en haut de la page -->
+    <button id="back-to-top" class="back-to-top" aria-label="Remonter en haut de la page" title="Haut de page">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Script pour le bouton de retour en haut de page
+        const backToTopButton = document.getElementById("back-to-top");
+        
+        // Afficher le bouton quand l'utilisateur descend de 300px depuis le haut
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+        
+        // Remonter en haut quand l'utilisateur clique sur le bouton
+        backToTopButton.addEventListener("click", function() {
+            document.body.scrollTop = 0; // Pour Safari
+            document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+        });
+
+        // Script pour le menu mobile
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const body = document.body;
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        // Ouvrir/fermer le menu mobile
+        mobileMenuToggle.addEventListener('click', function() {
+            body.classList.toggle('mobile-menu-open');
+        });
+
+        // Fermer le menu mobile quand on clique sur un lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                body.classList.remove('mobile-menu-open');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cancer chez les Sapeurs-Pompiers</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/api/placeholder/40/40" alt="Logo">
+                    <span>Cancer-Pompiers.Info</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html#about">À propos</a></li>
+                    <li><a href="../index.html#risks">Risques</a></li>
+                    <li><a href="../index.html#prevention">Prévention</a></li>
+                    <li><a href="../index.html#resources">Ressources</a></li>
+                    <li><a href="../index.html#news">Actualités</a></li>
+                    <li><a href="../index.html#database">Base de données</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <div class="breadcrumbs">
+                <a href="../index.html">Accueil</a> > <span>Contact</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="main-content">
+                    <h2>Nous sommes à votre écoute</h2>
+                    <p class="intro-text">Que vous soyez un sapeur-pompier à la recherche d'informations, un professionnel de santé souhaitant collaborer, ou un chercheur intéressé par nos données, n'hésitez pas à nous contacter. Notre équipe vous répondra dans les meilleurs délais.</p>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-form-container">
+                            <h3>Formulaire de contact</h3>
+                            <form class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Nom <span class="required">*</span></label>
+                                        <input type="text" id="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="firstname">Prénom <span class="required">*</span></label>
+                                        <input type="text" id="firstname" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email <span class="required">*</span></label>
+                                        <input type="email" id="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Téléphone</label>
+                                        <input type="tel" id="phone">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile">Vous êtes <span class="required">*</span></label>
+                                    <select id="profile" required>
+                                        <option value="">Sélectionnez votre profil</option>
+                                        <option value="sp-pro">Sapeur-pompier professionnel</option>
+                                        <option value="sp-vol">Sapeur-pompier volontaire</option>
+                                        <option value="medical">Professionnel de santé</option>
+                                        <option value="researcher">Chercheur</option>
+                                        <option value="media">Média</option>
+                                        <option value="other">Autre</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Sujet <span class="required">*</span></label>
+                                    <select id="subject" required>
+                                        <option value="">Sélectionnez un sujet</option>
+                                        <option value="info">Demande d'information</option>
+                                        <option value="support">Soutien et accompagnement</option>
+                                        <option value="partnership">Proposition de partenariat</option>
+                                        <option value="testimony">Partage de témoignage</option>
+                                        <option value="research">Collaboration scientifique</option>
+                                        <option value="other">Autre</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message <span class="required">*</span></label>
+                                    <textarea id="message" rows="6" required></textarea>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="privacy" required>
+                                    <label for="privacy">J'accepte que mes données soient traitées conformément à la <a href="#">politique de confidentialité</a> <span class="required">*</span></label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="newsletter">
+                                    <label for="newsletter">Je souhaite m'abonner à la newsletter mensuelle</label>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn">Envoyer le message</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="contact-info-container">
+                            <div class="contact-info">
+                                <h3>Nos coordonnées</h3>
+                                <ul class="contact-details">
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <h4>Adresse</h4>
+                                            <p>123 Avenue de la République<br>75011 Paris<br>France</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone"></i>
+                                        <div>
+                                            <h4>Téléphone</h4>
+                                            <p>+33 (0)1 23 45 67 89</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope"></i>
+                                        <div>
+                                            <h4>Email</h4>
+                                            <p>contact@cancer-pompiers.info</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <h4>Horaires</h4>
+                                            <p>Lundi - Vendredi : 9h00 - 17h00</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                                <div class="social-contact">
+                                    <h4>Suivez-nous</h4>
+                                    <div class="social-links-large">
+                                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                        <a href="#" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+                                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                                        <a href="#" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+                                        <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-map">
+                                <h3>Nous trouver</h3>
+                                <div class="map-container">
+                                    <img src="/api/placeholder/400/300" alt="Carte" class="map-placeholder">
+                                    <p class="map-note">Cliquez sur la carte pour l'ouvrir dans Google Maps</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-section">
+                        <h3>Questions fréquentes</h3>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Comment puis-je obtenir un soutien si je suis un sapeur-pompier atteint de cancer ?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Nous proposons plusieurs services de soutien pour les sapeurs-pompiers atteints de cancer, notamment :</p>
+                                    <ul>
+                                        <li>Une ligne d'écoute dédiée (numéro disponible dans l'espace membre)</li>
+                                        <li>Un accompagnement dans les démarches administratives pour la reconnaissance en maladie professionnelle</li>
+                                        <li>Des groupes de parole et d'entraide</li>
+                                        <li>Une mise en relation avec des professionnels de santé spécialisés</li>
+                                    </ul>
+                                    <p>Contactez-nous via le formulaire ci-dessus ou appelez notre ligne dédiée pour un accompagnement personnalisé.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Comment puis-je contribuer à vos recherches en tant que sapeur-pompier ?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Vous pouvez contribuer de plusieurs façons :</p>
+                                    <ul>
+                                        <li>En participant à nos études épidémiologiques (inscrivez-vous dans l'espace membre)</li>
+                                        <li>En partageant votre témoignage et votre expérience</li>
+                                        <li>En devenant ambassadeur de la prévention dans votre caserne</li>
+                                        <li>En nous aidant à diffuser les informations et bonnes pratiques</li>
+                                    </ul>
+                                    <p>Contactez notre équipe de recherche via le formulaire en sélectionnant "Collaboration scientifique" comme sujet.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Comment accéder à l'intégralité des études scientifiques de votre base de données ?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>L'accès complet à notre base de données scientifiques est gratuit pour :</p>
+                                    <ul>
+                                        <li>Tous les sapeurs-pompiers (professionnels et volontaires)</li>
+                                        <li>Les professionnels de santé</li>
+                                        <li>Les chercheurs et universitaires</li>
+                                    </ul>
+                                    <p>Il vous suffit de créer un compte dans notre espace membre et de valider votre statut. Pour les journalistes et autres professionnels, contactez-nous pour obtenir un accès spécifique.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Comment proposer un partenariat avec votre organisation ?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Nous sommes ouverts aux partenariats avec :</p>
+                                    <ul>
+                                        <li>Les SDIS et organisations de sapeurs-pompiers</li>
+                                        <li>Les institutions de recherche et universités</li>
+                                        <li>Les associations de patients et de soutien</li>
+                                        <li>Les entreprises développant des solutions de protection et de prévention</li>
+                                    </ul>
+                                    <p>Utilisez notre formulaire de contact en sélectionnant "Proposition de partenariat" comme sujet, ou contactez directement notre responsable des partenariats à partenariats@cancer-pompiers.info.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Comment organiser une intervention de sensibilisation dans ma caserne ?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Nous proposons des interventions de sensibilisation adaptées à tous les types de casernes :</p>
+                                    <ul>
+                                        <li>Conférences sur les risques cancérigènes et les moyens de prévention</li>
+                                        <li>Ateliers pratiques sur les protocoles de décontamination</li>
+                                        <li>Formation des référents "prévention cancer"</li>
+                                        <li>Distribution de matériel pédagogique</li>
+                                    </ul>
+                                    <p>Contactez-nous via le formulaire en précisant "Demande d'intervention" dans votre message, ou appelez-nous directement pour organiser une session.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Besoin urgent de soutien ?</h3>
+                        <div class="urgent-support">
+                            <p><strong>Ligne d'écoute dédiée :</strong></p>
+                            <p class="phone-number">0800 123 456</p>
+                            <p class="support-hours">Lundi au vendredi, 9h-21h<br>Samedi, 10h-18h</p>
+                            <p>Service gratuit et confidentiel</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Équipe de contact</h3>
+                        <div class="team-contacts">
+                            <div class="team-contact">
+                                <img src="/api/placeholder/80/80" alt="Dr. Marie Laurent" class="team-photo">
+                                <div class="team-info">
+                                    <h4>Dr. Marie Laurent</h4>
+                                    <p class="team-role">Directrice scientifique</p>
+                                    <p class="team-email">m.laurent@cancer-pompiers.info</p>
+                                </div>
+                            </div>
+                            <div class="team-contact">
+                                <img src="/api/placeholder/80/80" alt="Cpt. Thomas Dubois" class="team-photo">
+                                <div class="team-info">
+                                    <h4>Cpt. Thomas Dubois</h4>
+                                    <p class="team-role">Responsable prévention</p>
+                                    <p class="team-email">t.dubois@cancer-pompiers.info</p>
+                                </div>
+                            </div>
+                            <div class="team-contact">
+                                <img src="/api/placeholder/80/80" alt="Sophie Moreau" class="team-photo">
+                                <div class="team-info">
+                                    <h4>Sophie Moreau</h4>
+                                    <p class="team-role">Coordinatrice soutien</p>
+                                    <p class="team-email">s.moreau@cancer-pompiers.info</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Nos partenaires</h3>
+                        <div class="partner-logos">
+                            <img src="/api/placeholder/120/60" alt="FNSPF" class="partner-logo">
+                            <img src="/api/placeholder/120/60" alt="Ministère de l'Intérieur" class="partner-logo">
+                            <img src="/api/placeholder/120/60" alt="Institut National du Cancer" class="partner-logo">
+                            <img src="/api/placeholder/120/60" alt="CNRS" class="partner-logo">
+                            <img src="/api/placeholder/120/60" alt="Ligue contre le Cancer" class="partner-logo">
+                            <img src="/api/placeholder/120/60" alt="INSERM" class="partner-logo">
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget cta-widget">
+                        <h3>Téléchargez notre guide</h3>
+                        <p>Guide pratique pour la prévention des risques cancérigènes chez les sapeurs-pompiers</p>
+                        <a href="#" class="btn btn-full">Télécharger (PDF)</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ensemble contre le cancer chez les sapeurs-pompiers</h2>
+            <p>Votre soutien est essentiel pour faire avancer la recherche et améliorer la prévention</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn">Faire un don</a>
+                <a href="../index.html#member" class="btn btn-outline">Devenir membre</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/api/placeholder/40/40" alt="Logo">
+                        <span>Cancer-Pompiers.Info</span>
+                    </div>
+                    <p>Une ressource nationale dédiée à la prévention, la détection précoce et le soutien des sapeurs-pompiers face aux risques de cancer liés à leur profession.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#about">À propos</a></li>
+                        <li><a href="../index.html#risks">Risques</a></li>
+                        <li><a href="../index.html#prevention">Prévention</a></li>
+                        <li><a href="../index.html#resources">Ressources</a></li>
+                        <li><a href="../index.html#news">Actualités</a></li>
+                        <li><a href="../index.html#database">Base de données</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> contact@cancer-pompiers.info</li>
+                        <li><i class="fas fa-phone"></i> +33 (0)1 23 45 67 89</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de la République, 75011 Paris</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" title="Suivez-nous sur Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" title="Suivez-nous sur Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" title="Suivez-nous sur LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube" title="Suivez-nous sur YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram" title="Suivez-nous sur Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <form>
+                            <input type="email" placeholder="Votre email" aria-label="Votre adresse email">
+                            <button type="submit" aria-label="S'abonner à la newsletter" title="S'abonner à la newsletter"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cancer-Pompiers.Info - Tous droits réservés</p>
+                <ul class="footer-legal">
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>
